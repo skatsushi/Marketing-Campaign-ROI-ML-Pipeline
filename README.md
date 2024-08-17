@@ -31,13 +31,6 @@
 - **Flaskアプリケーションのデプロイ**: Flaskで開発したモデル推論APIをGoogle Cloud Runにデプロイします。これにより、スケーラブルで高可用性のアプリケーションとして提供します。
   - APIは広告チャネルごとの月次の費用データをJSON形式で受け取り、予測されたROIを返します。
 
-## ROIについて
-
-ROI (Return on Investment) は、投資の効率や成功度を評価するために広く使用される指標です。以下の式で計算されます。
-
-\[ \text{ROI} = \frac{\text{利益} - \text{投資額}}{\text{投資額}} \times 100\% \]
-
-
 ## 使用技術
 
 - **Google Cloud Platform (GCP)**
