@@ -1,0 +1,25 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/skatsushi/advertising_roi_model', '.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/skatsushi/advertising_roi_model']
+
+- name: 'gcr.io/skatsushi/advertising_roi_model'
+  entrypoint: 'bash'
+  args:
+   - '-c'
+   - |
+      python -m pytest
+
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/skatsushi/model-training-repo']
+
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', 'model-training-repo/advertising_model_training.py', 'gs://us-central1-mlops-airflow-1bb7d437-bucket/dags']
+
+images:
+- 'gcr.io/skatsushi/advertising_roi_model'
+
+options:
+  logging: CLOUD_LOGGING_ONLY

@@ -1,0 +1,8 @@
+scikit-learn==1.2.2
+pandas
+pyarrow
+pytest
+requests
+google-cloud-storage
+google-cloud-bigquery
+numpy==1.26.4
