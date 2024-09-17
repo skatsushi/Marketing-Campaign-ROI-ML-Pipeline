@@ -57,11 +57,11 @@
 ## 参考資料
 
 ### MLOpsインタラクティブフロー
-![MLOpsインタラクティブフロー](images/mlops-interactive-flow.svg)
+![MLOpsインタラクティブフロー](image/mlops-interactive-flow.svg)
 *図1: MLOpsインタラクティブフロー*
 
 ### MLOpsオペレーショナルフロー
-![MLOpsオペレーショナルフロー](images/mlops-operational-flow.svg)
+![MLOpsオペレーショナルフロー](image/mlops-operational-flow.svg)
 *図2: MLOpsオペレーショナルフロー*
 
 *図の引用元: [GCP Cloud Architecture Center](https://cloud.google.com/architecture)*
