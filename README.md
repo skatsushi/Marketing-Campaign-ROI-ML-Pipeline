@@ -54,3 +54,14 @@
   - scikit-learn
   - PyTest
 
+## 参考資料
+
+### MLOpsインタラクティブフロー
+![MLOpsインタラクティブフロー](images/mlops-interactive-flow.svg)
+*図1: MLOpsインタラクティブフロー*
+
+### MLOpsオペレーショナルフロー
+![MLOpsオペレーショナルフロー](images/mlops-operational-flow.svg)
+*図2: MLOpsオペレーショナルフロー*
+
+*図の引用元: [GCP Cloud Architecture Center](https://cloud.google.com/architecture)*
